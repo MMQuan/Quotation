@@ -1,0 +1,42 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_draw"
+>
+        <Button
+                android:id="@+id/photo"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ok_button_draw"
+                android:foreground="@drawable/ripple"
+                android:text="相册选择"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+        />
+        <Button
+                android:id="@+id/camera"
+                android:layout_width="270dp"
+                android:layout_height="50dp"
+                android:background="@drawable/cancel_button_draw"
+                android:foreground="@drawable/ripple"
+                android:text="相机拍照"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+        />
+    <Button
+            android:id="@+id/cancelPPP"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:background="@drawable/del_button_draw"
+            android:foreground="@drawable/ripple"
+            android:text="取消"
+            android:textSize="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+    />
+</LinearLayout>

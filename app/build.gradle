@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.example.quotation"
+        minSdkVersion 29
+        targetSdkVersion 29
+        versionCode 1
+        versionName "5.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all{
+                outputFileName = "LiShi-${variant.name}-v${variant.versionName}.apk"
+            }
+    }
+}
+
+dependencies {
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    implementation 'com.lovedise:permissiongen:0.0.6'
+    implementation 'net.sourceforge.jexcelapi:jxl:2.6.12'
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    implementation 'com.github.satyan:sugar:1.5'
+    implementation 'me.codeboy.android:align-text-view:2.3.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}

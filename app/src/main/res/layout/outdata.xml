@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/background_image"
+              tools:ignore="MissingDefaultResource">
+
+    <TextView android:id="@+id/title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="50dp"
+              android:layout_gravity="center_horizontal"
+              android:text="@string/addTitleFive"
+              android:textColor="@color/black"
+              android:textSize="30dp"
+    />
+    <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:padding="5dp"
+            android:background="@drawable/list_draw"
+            android:layout_gravity="center_horizontal"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lookDate"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+        />
+        <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/outExcelDate"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15dp"
+                android:hint="-默认当月-"
+                android:inputType="none"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/edit_draw"
+        />
+        <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="注\n默认为当前年月\n提示：EXCEL-1为姜**表\n提示：EXCEL-2为河源表\n没数据则为空表展示\n\n数据保存在手机内存福桑报价单文件夹"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+        />
+    </LinearLayout>
+    <Button android:id="@+id/outExcel"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="15dp"
+            android:background="@drawable/button_draw"
+            android:foreground="@drawable/ripple"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/outTable" />
+    <Button android:id="@+id/open"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:background="@drawable/ok_button_blue_draw"
+            android:foreground="@drawable/ripple"
+            android:layout_gravity="center_horizontal"
+            android:text="打开文件管理" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/daX"
+>
+    <ImageView
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageU"
+            android:adjustViewBounds="true"
+    />
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageU"
+            android:layout_marginTop="10dp"
+    >
+        <Button
+                android:id="@+id/imageOk"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ok_button_draw"
+                android:foreground="@drawable/ripple"
+                android:text="@string/yes"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+        />
+        <Button
+                android:id="@+id/imageCancel"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:background="@drawable/cancel_button_draw"
+                android:foreground="@drawable/ripple"
+                android:text="@string/cancel"
+                android:textSize="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_horizontal"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

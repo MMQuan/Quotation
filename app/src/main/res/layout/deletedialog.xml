@@ -1,0 +1,49 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_draw_delete"
+>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确 认 删 除？"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+
+    />
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+    >
+        <Button
+                android:id="@+id/deleteOk"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ok_button_draw"
+                android:foreground="@drawable/ripple"
+                android:text="@string/yes"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+        />
+        <Button
+                android:id="@+id/cancelDel"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:background="@drawable/cancel_button_draw"
+                android:foreground="@drawable/ripple"
+                android:text="@string/cancel"
+                android:textSize="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="center_horizontal"
+        />
+    </LinearLayout>
+</LinearLayout>

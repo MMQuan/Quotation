@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Quotation</string>
+    <string name="app_name_one">理事</string>
+    <string name="title">--梳理事项、数据统计--</string>
+    <string name="insertStringOne">🎉 添加完成事项</string>
+    <string name="insertStringTwo">💪 添加待办事项</string>
+    <string name="disposeString">📑 待办事项查看</string>
+    <string name="lookString">📈 完成事项查看</string>
+    <string name="outTable">📊 导出数据EXCEL</string>
+    <string name="insertMoney">💰 添加收支信息</string>
+    <string name="lookMoney">💸 查看收支信息</string>
+
+    <string name="addTitleOne">+-完成事项-+</string>
+    <string name="addTitleTwo">+-待办事项-+</string>
+    <string name="addTitleThree">✔待办事项查看✔</string>
+    <string name="addTitleFour">✔完成事项查看✔</string>
+    <string name="addTitleFive">数据导出（EXCEL）</string>
+    <string name="addTitleSix">+-收支信息-+</string>
+    <string name="addTitleSeven">✔收支信息查看✔</string>
+
+
+    <string name="matters">事项名称</string>
+    <string name="headName">负&#8194;责&#8194;人</string>
+    <string name="endDate">完成日期</string>
+    <string name="price">单&#8195;&#8195;价</string>
+    <string name="number">数&#8195;&#8195;量</string>
+    <string name="unit">单&#8195;&#8195;位</string>
+    <string name="total">合&#8195;&#8195;计</string>
+    <string name="workName">施&#8194;工&#8194;人</string>
+
+
+    <string name="remark">备&#8195;&#8195;注</string>
+    <string name="oldDate">最迟日期</string>
+
+
+    <string name="add">添加</string>
+    <string name="del">删除</string>
+    <string name="look">查看</string>
+    <string name="cancel">取消</string>
+    <string name="yes">确定</string>
+
+
+    <string name="lookDate">选择年月</string>
+    <string name="sum">月合计</string>
+    <string name="TT">-点击输入-</string>
+
+
+</resources>

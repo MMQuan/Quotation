@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.quotation"
+          xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+                     tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--注意：-->
+    <!--authorities：app的包名.fileProvider-->
+    <!--grantUriPermissions：必须是true，表示授予 URI 临时访问权限-->
+    <!--exported：必须是false-->
+    <!--resource：中的@xml/file_paths是我们接下来要添加的文件-->
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/app"
+            android:label="@string/app_name_one"
+            android:roundIcon="@drawable/app"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+            tools:replace="android:label"
+            android:requestLegacyExternalStorage="true"
+            android:name="com.example.database.DBCreat.SugarDB"
+            tools:ignore="GoogleAppIndexingWarning"
+    >
+        <meta-data android:name="DATABASE" android:value="QuotationThing.db"/>
+        <meta-data android:name="VERSION" android:value="3"/>
+        <meta-data android:name="QUERY_LOG" android:value="true"/>
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.example.database.bean"/>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddYesActivity"/>
+        <activity android:name=".AddNoActivity"/>
+        <activity android:name=".NoThingActivity"/>
+        <activity android:name=".YesThingActivity"/>
+        <activity android:name=".OutExcelActivity"/>
+        <activity android:name=".AddMoneyActivity"/>
+        <activity android:name=".MoneyThingActivity"/>
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="com.example.quotation.provider"
+                android:exported="false"
+                android:grantUriPermissions="true"
+                tools:ignore="WrongManifestParent">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

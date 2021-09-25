@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@drawable/background_image"
+              tools:ignore="MissingDefaultResource">
+
+    <TextView android:id="@+id/titleAll"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="50dp"
+              android:layout_gravity="center_horizontal"
+              android:text="@string/addTitleThree"
+              android:textColor="@color/black"
+              android:textSize="30dp"
+    />
+    <LinearLayout
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/list_draw"
+            android:layout_gravity="center_horizontal"
+    >
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:text="点击查看历史"
+                android:id="@+id/noAll"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:background="@drawable/ok_button_draw"
+                android:foreground="@drawable/ripple"
+        />
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="38dp"
+                android:text="新加待办"
+                android:id="@+id/yesAll"
+                android:layout_marginLeft="60dp"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:background="@drawable/ok_button_blue_draw"
+                android:foreground="@drawable/ripple"
+        />
+    </LinearLayout>
+    <ListView
+            android:id="@+id/noThingShow"
+            android:layout_width="380dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:footerDividersEnabled="false"
+            android:divider="@null"
+    />
+</LinearLayout>
